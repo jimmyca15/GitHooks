@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "executing pre-push"
+powershell.exe hooks/Verify.ps1 -Remote $1 -url $2 -Verbose
+exit

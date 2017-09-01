@@ -9,9 +9,6 @@ Param(
     $url
 )
 
-
-Write-Host "Hello From PowerShell"
-
 $allowedRemotesFile = Get-Item ./hooks/AllowedRemotes.config -ErrorAction SilentlyContinue
 
 if ($allowedRemotesFile -eq $null) {
